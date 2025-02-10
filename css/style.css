@@ -46,6 +46,12 @@ table {
   border-spacing: 0;
 }
 
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+}
+
 body {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
