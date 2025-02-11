@@ -53,9 +53,138 @@ table {
 }
 
 body {
-  font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+  color: hsl(234, 29%, 20%);
+}
+.card .form {
+  padding: 0 2.4em;
+  order: 2;
+}
+.card .form .paragraph-with-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2.6em;
+  margin-bottom: 1.5em;
+}
+.card .form .paragraph-with-icon img {
+  width: 2.1em;
+  height: 2.1em;
+}
+.card .form__info {
+  margin-bottom: 4em;
+}
+.card .form__info--title {
+  font-size: 4rem;
+  line-height: 1;
+  letter-spacing: 0;
+}
+.card .form__info--desc {
+  margin: 1.5em 0;
+  font-size: 1.6rem;
+}
+.card .form__info--text {
+  font-size: 1.6rem;
+}
+.card .form__input-box--info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .form__input-box label {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.card .form__input-box .error-info {
+  font-size: 1.2rem;
+  font-weight: 700;
+  visibility: hidden;
+  color: hsl(4, 100%, 67%);
+}
+.card .form__input-box input {
+  margin: 0.5em 0 1.5em;
+  padding: 1em 1.5em;
+  width: 100%;
+  border: 2px solid hsl(231, 7%, 60%);
+  border-radius: 8px;
+  transition: border 0.3s;
+  cursor: pointer;
+}
+.card .form__input-box input:hover, .card .form__input-box input:focus {
+  border: 2px solid hsl(235, 18%, 26%);
+}
+.card .form__input-box .error {
+  color: red;
+  background-color: #ffe8e6;
+  border: 2px solid red;
+}
+.card .form__input-box button {
+  position: relative;
+  margin-bottom: 2em;
+  padding: 1.5em;
+  width: 100%;
+  color: hsl(0, 0%, 100%);
+  background: hsl(234, 29%, 20%);
+  font-weight: 700;
+  border-radius: 8px;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+.card .form__input-box button:hover, .card .form__input-box button:focus {
+  background: hsl(4, 100%, 67%);
+}
+.card .img {
+  order: 1;
+  width: 100%;
+  height: 300px;
+  background-image: url("../assets/images/illustration-sign-up-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (width > 800px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #36384d;
+  }
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2.4em;
+    background-color: #fff;
+    border-radius: 36px;
+  }
+  .card .form {
+    padding: 0 4em;
+    max-width: 450px;
+  }
+  .card .img {
+    order: 2;
+    width: 400px;
+    height: 593px;
+    background-image: url("../assets/images/illustration-sign-up-desktop.svg");
+    background-position: center;
+  }
+}
+.modal {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
