@@ -196,13 +196,14 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  overflow: hidden;
   background-color: rgba(54, 56, 77, 0.7333333333);
   z-index: 3;
 }
 .modal form {
-  max-width: 504px;
   padding: 4.8em 6.4em;
+  max-width: 504px;
   background-color: #fff;
   border-radius: 32px;
 }
