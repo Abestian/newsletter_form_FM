@@ -5,6 +5,7 @@ const closeModalBtn = document.querySelector('.modal__close-btn');
 const inputEmail = document.querySelector('#email');
 const submitFormBtn = document.querySelector('.form__submit-btn');
 const errorInfo = document.querySelector('.error-info');
+const showEmail = document.querySelector('.show-email');
 
 const closeModal = () => {
 	modal.classList.remove('modal-active');
@@ -22,6 +23,7 @@ const checkEmail = email => {
 	if (re.test(email.value)) {
 		clearError();
 		modal.classList.add('modal-active');
+		showEmail.innerHTML = `${email.value}`;
 		email.value = '';
 	} else {
 		errorInfo.textContent = 'Valid email required';

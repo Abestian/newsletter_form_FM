@@ -75,7 +75,7 @@
 			button {
 				position: relative;
 				margin-bottom: 2em;
-				padding: 1.5em;
+				padding: 1em 1.5em;
 				width: 100%;
 				font-size: 1.6rem;
 				color: $contrast-light;
@@ -120,6 +120,10 @@
 		.form {
 			padding: 0 4em;
 			max-width: 450px;
+
+			&__info--title {
+				font-size: 5.6rem;
+			}
 		}
 
 		.img {
