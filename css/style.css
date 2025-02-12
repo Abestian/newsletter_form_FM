@@ -111,7 +111,6 @@ body {
 .card .form__input-box .error-info {
   font-size: 1.2rem;
   font-weight: 700;
-  visibility: hidden;
   color: hsl(4, 100%, 67%);
 }
 .card .form__input-box input {
