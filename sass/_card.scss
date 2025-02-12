@@ -78,6 +78,7 @@
 				margin-bottom: 2em;
 				padding: 1.5em;
 				width: 100%;
+				font-size: 1.6rem;
 				color: $contrast-light;
 				background: $contrast-dark;
 				font-weight: 700;
@@ -112,13 +113,14 @@
 
 	.card {
 		@include flex-base(row, center, center);
+		margin: 2em;
 		padding: 2.4em;
 		background-color: #fff;
 		border-radius: 36px;
 
 		.form {
 			padding: 0 4em;
-            max-width: 450px;
+			max-width: 450px;
 		}
 
 		.img {
